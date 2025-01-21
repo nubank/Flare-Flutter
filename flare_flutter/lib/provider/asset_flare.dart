@@ -22,7 +22,7 @@ class AssetFlare extends AssetProvider {
   });
 
   @override
-  int get hashCode => hashValues(bundle, name);
+  int get hashCode => Object.hashAll([bundle, name]);
 
   @override
   bool operator ==(dynamic other) {
